@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <title>Lab 4 - Data Visualization</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<p> <strong>Lab 4 - Data Visualization in Tableau Public</strong></p>
+<body>
+
+
+<div class='tableauPlaceholder' id='viz1771018143380' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;La&#47;Lab4Visualization_17709655988240&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Lab4Visualization_17709655988240&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;La&#47;Lab4Visualization_17709655988240&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1771018143380');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+ <style>
+        p1{color:rgb(219, 133, 53);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+       p1{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+    </style>
+
+<p1><strong>Visualization question: Can we determine which species travel the longest distances? </strong></p1>
+
+
+<p><strong>1. Data Preparation</strong></p>
+<p>I used Kaggle, a general data repository, to find my chosen dataset for this Lab. I found that this was the most straightforward website with available data. I didn’t find much difficulty in downloading the data from Kaggle and uploading it to Tableau. One thing to take note of is that the dataset is initially downloaded zipped so you are required to take the csv out of the zipped file before uploading it to Tableau. </p>
+
+<p><strong>2. Design Choices</strong></p>
+<p>Before I began my visualization I wanted to structure a question based on the elements given to me by the data set. My question was ‘Which species travel the longest distances?’ Having that in mind allowed me to appropriately use the information given to me. I used the ‘flight distance in km’ as my x-axis and bird species as my  y-axis for my bar graph to view and compare the distance flown by each bird species. My second sheet was a map to detect the distance traveled by different species to their end locations. This helps the viewer visualize which species traveled the longest to the location. To not add an overwhelming amount of points I decided to filter out the amount of points in the dataset, particularly using 51 bird IDs. I lastly wanted to create another graph that focuses on the total traveled distance by species but that specifically focused on the group of 51 bird IDs. I wanted to see if any statistical patterns could be found or if the group size affected the results in a way. </p>
+
+<p><strong>3. Expected Patterns</strong></p>
+<p>I enjoyed creating my 3rd graph because It shows a clearer distinction of the amount of km a species of bird is flying compared to another one. I also encourage viewers to see the difference between the group of 51 bird IDs and all the birds, this feature can be changed through the side key. One interesting thing I saw was about different habitats and their role on migration patterns. Birds that are considered to be coastal/wetland species tend to travel slightly larger distances. I will have to say I think a lot of background knowledge will have to be gained before understanding my visualization. Bird migration is unpredictable and can be hard to record because of outside factors stopping appropriate detection. I would love to come back to this dataset moving forward and try to figure how I can make it clearer to my viewers.
+</p>
+
+<p><strong>4. Surprises/Outliers</strong></p>
+<p>I didn’t see any major outliers that surprised me but I can identify a possible error that can change the results of my graph. I tried to randomize the 51 species ID to make a smaller group without drastically  affecting the results through bias but I noticed that the group had more of one species compared to the others. It seems like the dataset was much more successful at recording the population of some species compared to others, making it incredibly hard to avoid bias unless manually going through the filters of the csv before uploading it to my tableau. </p>
+
+<p><strong>5. Questions for Further Investigation</strong></p>
+<p> - Is this species associated with open-ocean or open-air habitats that allow fewer movement barriers?</p>
+<p> - Does habitat stability reduce the need for llong migration? </p>
+<p> -Are migration distances measured consistently across all species?</p>
+
+<p><strong>6. Tool Evaluation</strong></p>
+<p>I genuinely enjoyed using Tableau Public. This software made it easier for me as an analyzer to create visualizations that are clear and interactive for my readers. This tool is pretty easy to learn and can create really good graphs. I would say one limitation is that you must save everything, especially if you’re using it on the web. I learned the hard way that it can easily fail if too much is going on and internet connection is bad. Always be sure to publish before exiting out or turning off your computer device. Overall Tableau is a good tool that allows students/researchers to create  basic visualization graphs. 
+</p>
