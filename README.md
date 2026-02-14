@@ -31,7 +31,7 @@ By this point in the semester, your portfolio should contain:
 
 | Page | File | Lab | Description |
 |------|------|-----|-------------|
-| **Home/Landing** | `Index.html` | Lab 1 | Introduction and navigation to all other pages |
+| **Home/Landing** | `index.html` | Lab 1 | Introduction and navigation to all other pages |
 | **AI Tool Evaluation** | `ai-evaluation.html` | Lab 2 | Analysis of AI tools (500-750 words) with evidence |
 | **Tufte Critique** | `tufte-critique.html` | Lab 3 | Visualization critique (500+ words) with embedded infographic |
 | **Tableau Visualization** | `tableau-visualization.html` | Lab 4 | Embedded Tableau Public viz with reflection (500+ words) |
