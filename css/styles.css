@@ -65,14 +65,35 @@ nav {
     padding: 0.75rem;
     display: flex;              /* Make nav a flex container */
     justify-content: center;    /* Center the ul inside nav */
+    align-items: center;        /* Vertically center items */
     position: sticky;           /* Stick to top when scrolling */
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+    display: none;              /* Hidden by default on desktop */
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
 /* Style the navigation list */
-nav ul {
+.nav-menu {
     list-style: none;           /* Remove bullets */
     padding: 0;                 /* Remove default padding */
     margin: 0;                  /* Remove default margin */
@@ -97,6 +118,61 @@ nav a {
 
 nav a:hover {
     background-color: var(--primary-color);
+}
+
+/* Mobile Navigation - screens under 768px */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex;          /* Show hamburger on mobile */
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+        max-height: 0;          /* Hide menu by default */
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        gap: 0;
+        margin-top: 1rem;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;      /* Show menu when active */
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 0.75rem 0;
+        width: 100%;
+    }
+
+    /* Animate hamburger icon */
+    .hamburger[aria-expanded="true"] span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .hamburger[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger[aria-expanded="true"] span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
 }
 
 /* =========================

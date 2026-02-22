@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" >
      <!-- Added the style code to easily change the colors/font -->
     <style>
-        h1 {color:blueviolet;
+        h1 {color:rgb(103, 29, 173);
        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
        p{font-family:Georgia, 'Times New Roman', Times, serif}
     </style>
@@ -18,8 +18,13 @@
 <body>
     <!-- Navigation: Links to all portfolio pages -->
     <nav>
-        <ul>
-            <a href="lab02.html">Lab 2: AI Experimentation</a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <a href="lab02.html">Lab 2: AI Experimentation</a  >
             <li><a href="index.html">Home</a></li>
             <li><a href="Labs/Lab02.html">AI Evaluation</a></li>
             <li><a href="Labs/Lab03.html">Tufte Critique</a></li>
@@ -126,5 +131,26 @@
         <p><a href="https://github.com/Ailicec-valdez/DCDA40833-portfolio">View Repository on GitHub</a></p>
         <p>&copy; 2026 Ailicec Valdez | DCDA 40833 | TCU</p>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
