@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - AI-Assisted Development | Ailicec Valdez</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+    <header>
+       <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Labs/Lab02.html">AI Evaluation</a></li>
+                <li><a href="../Labs/Lab03.html">Visualization Critique</a></li>
+                <li><a href="../Labs/Lab04.html">Data Visualization in Tableau Public</a></li>
+                    <li><a href="../Labs/Lab05.html">AI-Assisted Development</a></li>
+        </ul>
+    </nav>
+        <h1>Lab 5 - AI-Assisted Development</h1>
+
+<head> Use Vibe Coding to perform AI-assisted development tasks. Today I will be accomplishing Experiment A: Portfolio Enhancement- Image gallery or corousel</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel - Lab 05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #631388 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+             margin: 0; /* Add this if not present */
+        }
+
+        .carousel-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            margin: 0 auto; /* Add this for horizontal centering */
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            padding: 0 20px;
+        }
+
+        .nav-button {
+            background: rgba(104, 208, 250, 0.8);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-button:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #667eea;
+            transform: scale(1.3);
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            padding: 30px 20px 20px;
+            text-align: center;
+        }
+
+        .carousel-caption h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-caption p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slide active">
+                <img src="../images/IMG_2219.JPG" alt="Image 1">
+                <div class="carousel-caption">
+                    <h3>Liniarius</h3>
+                    <p>Image taken in South Africa</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../images/IMG_2336.JPG" alt="Image 2">
+                <div class="carousel-caption">
+                    <h3>African Spoonbill</h3>
+                    <p>Image taken in South Africa</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../images/IMG_2339.JPG" alt="Image 3">
+                <div class="carousel-caption">
+                    <h3>Pied Kingfisher</h3>
+                    <p>Image taken in South Africa</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../images/IMG_3484.JPG" alt="Image 4">
+                <div class="carousel-caption">
+                    <h3>Mountain Bluebird</h3>
+                    <p>Image taken in Rocky Mountains, Colorado</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../images/IMG_3751.JPG" alt="Image 5">
+                <div class="carousel-caption">
+                    <h3>Eastern Bluebird</h3>
+                    <p>Image taken in Little Elm, Texas </p>
+                </div>
+            </div>
+
+            <div class="carousel-navigation">
+                <button class="nav-button prev-button">❮</button>
+                <button class="nav-button next-button">❯</button>
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+            <span class="indicator" data-slide="4"></span>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            currentSlide = (index + totalSlides) % totalSlides;
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        document.querySelector('.next-button').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        document.querySelector('.prev-button').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                showSlide(parseInt(indicator.dataset.slide));
+            });
+        });
+
+        // Auto-play (optional)
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+    </script>
+
+<main>
+<section class="content-section">
+        <h2>Plan it first</h2>
+        <style>
+        p{color:rgb(78, 31, 141);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+       p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+    </style>
+            <p>
+               Today, I want to create an image carousel to attach to my lab05. I will be using AI functions to help guide me and create the code needed to correctly display these functions in my html. I will be writing a series of clear prompts to the generator to achieve the best results.
+
+            </p>
+</main>
+<main>
+<section class="content-section">
+        <h2>Prompt the AI</h2>
+        <style>
+        p{color:rgb(31, 137, 141);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+       p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+       p1{color:rgb(2, 2, 2);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman',
+    
+    </style>
+
+    <p1> <strong>Prompt 1</strong>
+         “I would like to create an image carousel in my Lab05.html. The carousel will be interactive and display all images in a creative and organized way. I would like it to include 5 images.”
+
+    </p1>
+    <p1> <strong>Prompt 2</strong>
+“How can I align the carousel to the center?”
+    </p1>
+            <p>
+              By making sure my prompt is clear I can ensure the best results. I used two prompts, one to get the result of the carousel and the other to help me with structure. I enjoyed that the generator gave me my results with suggestions. 
+
+            </p>
+
+</section>
+</main>
+<main>
+    <section class="content-section">
+        <h2>Review the code</h2>
+        <style>
+        p{color:rgb(31, 137, 141);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+       p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+       p1{color:rgb(68, 125, 158);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman',}
+</style>
+            <p>I didn’t see any dramatic errors or changes to my program. The only thing I noticeably noted was that the AI response changed the colors of my website.
+                
+                </p>
+    </main>
+<main>
+    <section class="content-section">
+        <h2>Test thoroughly</h2>
+        <style>
+        p{color:rgb(31, 137, 141);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+       p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+       p1{color:rgb(68, 125, 158);
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman',}
+</style>
+           <p>
+            I didn’t see any dramatic errors or changes to my program. The only thing I noticeably noted was that the AI response changed the colors of my website.
+           </p>
+</main>
