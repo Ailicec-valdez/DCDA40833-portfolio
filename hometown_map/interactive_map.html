@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_96d82fb9fa829d5ef6b8a33cdb9a11c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_96d82fb9fa829d5ef6b8a33cdb9a11c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_96d82fb9fa829d5ef6b8a33cdb9a11c9 = L.map(
+                "map_96d82fb9fa829d5ef6b8a33cdb9a11c9",
+                {
+                    center: [33.16078709090909, -96.93059290909092],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93586c4f01e4d5afcafb63a479b3189e = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/valdez-aili/cmm3r3a2q00dw01s1b90q89g0/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmFsZGV6LWFpbGkiLCJhIjoiY21sdHF5emZmMDM1bTNrcTBjdHZmbjNheCJ9.agyy-382yOk0EJJrDHCr4A",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_93586c4f01e4d5afcafb63a479b3189e.addTo(map_96d82fb9fa829d5ef6b8a33cdb9a11c9);
+        
+    
+            var marker_cluster_4163974be4f967b16a3ce5a9428d3865 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_b3bb6991434b280ff8c95deaf20d8ca5 = L.marker(
+                [33.15682, -96.946172],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_4a27496d96b2ebeab68d43dce709043a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c933a2deb0904dec8cbd8697b0df8bb = $(`<div id="html_0c933a2deb0904dec8cbd8697b0df8bb" style="width: 100.0%; height: 100.0%;"><b>Little Elm Park</b><br>701 W Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_4a27496d96b2ebeab68d43dce709043a.setContent(html_0c933a2deb0904dec8cbd8697b0df8bb);
+            
+        
+
+        marker_b3bb6991434b280ff8c95deaf20d8ca5.bindPopup(popup_4a27496d96b2ebeab68d43dce709043a)
+        ;
+
+        
+    
+    
+            var marker_f7e46108298e348c7680b9b25ad5cddf = L.marker(
+                [33.163412, -96.932718],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_e6efae84f157a390c11b88ecf5456f11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e1305651ebf0d715497faccb077431b = $(`<div id="html_9e1305651ebf0d715497faccb077431b" style="width: 100.0%; height: 100.0%;"><b>Beard Park</b><br>310 E ELdorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_e6efae84f157a390c11b88ecf5456f11.setContent(html_9e1305651ebf0d715497faccb077431b);
+            
+        
+
+        marker_f7e46108298e348c7680b9b25ad5cddf.bindPopup(popup_e6efae84f157a390c11b88ecf5456f11)
+        ;
+
+        
+    
+    
+            var marker_69b033bcaa53189d1fd0d757feb32a4e = L.marker(
+                [33.15899, -96.947902],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_73689a3571cc2b696ab1aa5560f96097 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bddb30b5f2ea8d77662767da8f9b8b5b = $(`<div id="html_bddb30b5f2ea8d77662767da8f9b8b5b" style="width: 100.0%; height: 100.0%;"><b>Little Elm Beach</b><br>704 W Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_73689a3571cc2b696ab1aa5560f96097.setContent(html_bddb30b5f2ea8d77662767da8f9b8b5b);
+            
+        
+
+        marker_69b033bcaa53189d1fd0d757feb32a4e.bindPopup(popup_73689a3571cc2b696ab1aa5560f96097)
+        ;
+
+        
+    
+    
+            var marker_89383c6b463eebf979cd6576ad9b8259 = L.marker(
+                [33.165906, -96.891631],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_f783b0c3611a9b6a2477d401e614a65d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9ac5bd69e5b81cb278f4de0330d3378 = $(`<div id="html_e9ac5bd69e5b81cb278f4de0330d3378" style="width: 100.0%; height: 100.0%;"><b>McCord Park</b><br>1900 FM 423, Little Elm, TX 75068</div>`)[0];
+                popup_f783b0c3611a9b6a2477d401e614a65d.setContent(html_e9ac5bd69e5b81cb278f4de0330d3378);
+            
+        
+
+        marker_89383c6b463eebf979cd6576ad9b8259.bindPopup(popup_f783b0c3611a9b6a2477d401e614a65d)
+        ;
+
+        
+    
+    
+            var marker_7731a4c3eebfa5a864564824dc384dfe = L.marker(
+                [33.155959, -96.944092],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_7a42db66ae612a64dba8e3c5112e79bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9fbd684bf62706896a8b2dc54e2633f = $(`<div id="html_c9fbd684bf62706896a8b2dc54e2633f" style="width: 100.0%; height: 100.0%;"><b>Leo's Brunch House </b><br>500 W Eldorado Pkwy #400, Little Elm, TX 75068</div>`)[0];
+                popup_7a42db66ae612a64dba8e3c5112e79bc.setContent(html_c9fbd684bf62706896a8b2dc54e2633f);
+            
+        
+
+        marker_7731a4c3eebfa5a864564824dc384dfe.bindPopup(popup_7a42db66ae612a64dba8e3c5112e79bc)
+        ;
+
+        
+    
+    
+            var marker_b7191f23a48d52b40e3416642aad89a4 = L.marker(
+                [33.162467, -96.933859],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_2510306ea3646aa818f71ca8685e8385 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49978764aed9735cce414c00d97e9cba = $(`<div id="html_49978764aed9735cce414c00d97e9cba" style="width: 100.0%; height: 100.0%;"><b>Towers Tap House</b><br>290 E Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_2510306ea3646aa818f71ca8685e8385.setContent(html_49978764aed9735cce414c00d97e9cba);
+            
+        
+
+        marker_b7191f23a48d52b40e3416642aad89a4.bindPopup(popup_2510306ea3646aa818f71ca8685e8385)
+        ;
+
+        
+    
+    
+            var marker_af2e1ce3498bb47dcf70029bd7d39508 = L.marker(
+                [33.156791, -96.892076],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_b647585fba8e3e927e7f3aaeff1755ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2b8aee151f02179408a6437282a797d = $(`<div id="html_b2b8aee151f02179408a6437282a797d" style="width: 100.0%; height: 100.0%;"><b>Flix Brewhouse Frisco/Little Elm</b><br>1660 FM 423, Frisco, TX 75068</div>`)[0];
+                popup_b647585fba8e3e927e7f3aaeff1755ef.setContent(html_b2b8aee151f02179408a6437282a797d);
+            
+        
+
+        marker_af2e1ce3498bb47dcf70029bd7d39508.bindPopup(popup_b647585fba8e3e927e7f3aaeff1755ef)
+        ;
+
+        
+    
+    
+            var marker_cade95d73b692bd9208fae9b4ac95668 = L.marker(
+                [33.165275, -96.939092],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_48aef8719f89b272bbce718fdbf47687 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3de3e42d72f1f52ffa1097ce06296f15 = $(`<div id="html_3de3e42d72f1f52ffa1097ce06296f15" style="width: 100.0%; height: 100.0%;"><b>The Cove at The Lakefront</b><br>417 Lakefront Dr, Little Elm, TX 75068</div>`)[0];
+                popup_48aef8719f89b272bbce718fdbf47687.setContent(html_3de3e42d72f1f52ffa1097ce06296f15);
+            
+        
+
+        marker_cade95d73b692bd9208fae9b4ac95668.bindPopup(popup_48aef8719f89b272bbce718fdbf47687)
+        ;
+
+        
+    
+    
+            var marker_ed127cba8dc1113a047adb06692c6d9c = L.marker(
+                [33.162401, -96.934024],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_6c37c56354d3c36ccf286632f691a03a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e4271e4fc93ea45c90dc32cd567a25b = $(`<div id="html_9e4271e4fc93ea45c90dc32cd567a25b" style="width: 100.0%; height: 100.0%;"><b>Hydrous Wake Park</b><br>280 E Eldorado Pkwy Little Elm, TX 75068</div>`)[0];
+                popup_6c37c56354d3c36ccf286632f691a03a.setContent(html_9e4271e4fc93ea45c90dc32cd567a25b);
+            
+        
+
+        marker_ed127cba8dc1113a047adb06692c6d9c.bindPopup(popup_6c37c56354d3c36ccf286632f691a03a)
+        ;
+
+        
+    
+    
+            var marker_d9f923c27bde79c595aa81880cc74944 = L.marker(
+                [33.162777, -96.935072],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_4178ada8511b7d2784f752e3d7ab64df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df37c12a7a4de1a08a340322d097e251 = $(`<div id="html_df37c12a7a4de1a08a340322d097e251" style="width: 100.0%; height: 100.0%;"><b>Tinman Social</b><br>199 Main St, Little Elm, TX 75068</div>`)[0];
+                popup_4178ada8511b7d2784f752e3d7ab64df.setContent(html_df37c12a7a4de1a08a340322d097e251);
+            
+        
+
+        marker_d9f923c27bde79c595aa81880cc74944.bindPopup(popup_4178ada8511b7d2784f752e3d7ab64df)
+        ;
+
+        
+    
+    
+            var marker_11819bd583e6f8a9a8fe0570bdacc4e8 = L.marker(
+                [33.15786, -96.939884],
+                {
+}
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
+        
+    
+        var popup_23b39cac733050512224f44c81e96b6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1543b29dec48b6a937bd185445904f04 = $(`<div id="html_1543b29dec48b6a937bd185445904f04" style="width: 100.0%; height: 100.0%;"><b>Little Elm Public Library</b><br>100 W Eldorado pkwym Little Elm, TX 75068</div>`)[0];
+                popup_23b39cac733050512224f44c81e96b6b.setContent(html_1543b29dec48b6a937bd185445904f04);
+            
+        
+
+        marker_11819bd583e6f8a9a8fe0570bdacc4e8.bindPopup(popup_23b39cac733050512224f44c81e96b6b)
+        ;
+
+        
+    
+    
+            marker_cluster_4163974be4f967b16a3ce5a9428d3865.addTo(map_96d82fb9fa829d5ef6b8a33cdb9a11c9);
+        
+</script>
+</html>
