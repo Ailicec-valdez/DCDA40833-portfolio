@@ -7,13 +7,78 @@
    CSS Variables (Color Scheme)
    ========================= */
 :root {
-    --primary-color: #7bb390;      /* TCU Purple */
-    --secondary-color: #a189ca;    /* Light Purple */
-    --accent-color: #9acd7f;       /* Gold accent */
-    --text-color: #1e2f12;            /* Dark gray for text */
+    --primary-color: #3e427d;      /* TCU Purple */
+    --secondary-color: #eadf81;    /* Light Purple */
+    --accent-color: #fffc61;       /* Gold accent */
+    --text-color: #08225f;            /* Dark gray for text */
     --text-secondary: #64748b;     /* Lighter gray for captions */
-    --bg-color: #918b9a;           /* Light background */
+    --bg-color: #626275;           /* Light background */
     --white: #fdfdfd;
+}
+
+/* =========================
+   Keyframe Animations for Scroll Effects
+   ========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 2px 20px rgba(123, 179, 144, 0.3);
+    }
 }
 
 /* =========================
@@ -61,7 +126,7 @@ header p {
 }
 
 nav {
-    background-color: #69578c;
+    background-color: #39386d;
     padding: 0.75rem;
     display: flex;              /* Make nav a flex container */
     justify-content: center;    /* Center the ul inside nav */
@@ -192,6 +257,9 @@ main section {
     margin-bottom: 2rem;       /* Space between sections */
     border-radius: 8px;        /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideInFromBottom 0.8s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 /* Style h2 headings inside sections */
@@ -235,6 +303,21 @@ main section li {
     margin: 2rem 0;
     text-align: center;
 }
+figure {
+    text-align: center;
+}
+
+/* Profile image styling with hover effect */
+.profile-img {
+    box-shadow: 0 4px 12px rgba(103, 29, 173, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(103, 29, 173, 0.5);
+}
 
 .viz-container img {
     max-width: 100%;           /* Responsive: never wider than container */
@@ -242,6 +325,14 @@ main section li {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 0.5rem;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.viz-container img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Figure captions */
@@ -394,12 +485,16 @@ tr:nth-child(even) {
     color: var(--text-color);
     transition: all 0.3s ease;
     position: relative;
+    animation: scaleIn 0.6s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .portfolio-card:hover {
     border-color: var(--primary-color);
     box-shadow: 0 8px 16px rgba(77, 25, 121, 0.15);
     transform: translateY(-4px);
+    animation: none;
 }
 
 .portfolio-card h3 {
