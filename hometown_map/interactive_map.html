@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_194814ae680820a9d8e169ca575762d2 {
+                #map_96d82fb9fa829d5ef6b8a33cdb9a11c9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -57,14 +58,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_194814ae680820a9d8e169ca575762d2" ></div>
+            <div class="folium-map" id="map_96d82fb9fa829d5ef6b8a33cdb9a11c9" ></div>
         
 </body>
 <script>
     
     
-            var map_194814ae680820a9d8e169ca575762d2 = L.map(
-                "map_194814ae680820a9d8e169ca575762d2",
+            var map_96d82fb9fa829d5ef6b8a33cdb9a11c9 = L.map(
+                "map_96d82fb9fa829d5ef6b8a33cdb9a11c9",
                 {
                     center: [33.16078709090909, -96.93059290909092],
                     crs: L.CRS.EPSG3857,
@@ -81,14 +82,14 @@
 
         
     
-            var tile_layer_f0c1d0311a5f170c49e1065c36cb7448 = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_93586c4f01e4d5afcafb63a479b3189e = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/valdez-aili/cmm3r3a2q00dw01s1b90q89g0/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmFsZGV6LWFpbGkiLCJhIjoiY21sdHF5emZmMDM1bTNrcTBjdHZmbjNheCJ9.agyy-382yOk0EJJrDHCr4A",
                 {
   "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "attribution": "Mapbox",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -98,280 +99,281 @@
             );
         
     
-            tile_layer_f0c1d0311a5f170c49e1065c36cb7448.addTo(map_194814ae680820a9d8e169ca575762d2);
+            tile_layer_93586c4f01e4d5afcafb63a479b3189e.addTo(map_96d82fb9fa829d5ef6b8a33cdb9a11c9);
         
     
-            var marker_cluster_12dff1ecd90a989b0500e69ce1a13bce = L.markerClusterGroup(
+            var marker_cluster_4163974be4f967b16a3ce5a9428d3865 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_72884f579d736cf59e0c5948a85848dd = L.marker(
+            var marker_b3bb6991434b280ff8c95deaf20d8ca5 = L.marker(
                 [33.15682, -96.946172],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_ce5731e3f9e57ba1393e8d8740eafdf9 = L.popup({
-  "maxWidth": 320,
+        var popup_4a27496d96b2ebeab68d43dce709043a = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_d3c364d9032bb01f2890f64832b5a66c = $(`<div id="html_d3c364d9032bb01f2890f64832b5a66c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Little Elm Park</h4>         <p style="margin: 5px 0; font-size: 12px;">701 W Eldorado Pkwy, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Park</p>              <img src="https://littleelmedc.com/wp-content/uploads/2024/07/DJI_0051_2_3_4_5-Edit-scaled.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">"Premier North Texas recreational destination featuring the area's largest public sand beach"</p>         </div></div>`)[0];
-                popup_ce5731e3f9e57ba1393e8d8740eafdf9.setContent(html_d3c364d9032bb01f2890f64832b5a66c);
+                var html_0c933a2deb0904dec8cbd8697b0df8bb = $(`<div id="html_0c933a2deb0904dec8cbd8697b0df8bb" style="width: 100.0%; height: 100.0%;"><b>Little Elm Park</b><br>701 W Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_4a27496d96b2ebeab68d43dce709043a.setContent(html_0c933a2deb0904dec8cbd8697b0df8bb);
             
         
 
-        marker_72884f579d736cf59e0c5948a85848dd.bindPopup(popup_ce5731e3f9e57ba1393e8d8740eafdf9)
+        marker_b3bb6991434b280ff8c95deaf20d8ca5.bindPopup(popup_4a27496d96b2ebeab68d43dce709043a)
         ;
 
         
     
     
-            var marker_f33ea803a29826e282e11f5ea4f1ff0b = L.marker(
+            var marker_f7e46108298e348c7680b9b25ad5cddf = L.marker(
                 [33.163412, -96.932718],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_1c222461f90d996f104b14a5e66690db = L.popup({
-  "maxWidth": 320,
+        var popup_e6efae84f157a390c11b88ecf5456f11 = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_6d5993dd3fd3827e69c6ef3fbb346ca1 = $(`<div id="html_6d5993dd3fd3827e69c6ef3fbb346ca1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Beard Park</h4>         <p style="margin: 5px 0; font-size: 12px;">310 E ELdorado Pkwy, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Park</p>              <img src="https://littleelmedc.com/wp-content/uploads/2024/07/DJI_0051_2_3_4_5-Edit-scaled.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A lakeside, family friendly destination blending nature with local heritage"</p>         </div></div>`)[0];
-                popup_1c222461f90d996f104b14a5e66690db.setContent(html_6d5993dd3fd3827e69c6ef3fbb346ca1);
+                var html_9e1305651ebf0d715497faccb077431b = $(`<div id="html_9e1305651ebf0d715497faccb077431b" style="width: 100.0%; height: 100.0%;"><b>Beard Park</b><br>310 E ELdorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_e6efae84f157a390c11b88ecf5456f11.setContent(html_9e1305651ebf0d715497faccb077431b);
             
         
 
-        marker_f33ea803a29826e282e11f5ea4f1ff0b.bindPopup(popup_1c222461f90d996f104b14a5e66690db)
+        marker_f7e46108298e348c7680b9b25ad5cddf.bindPopup(popup_e6efae84f157a390c11b88ecf5456f11)
         ;
 
         
     
     
-            var marker_4619934c57d2cee12032f3707cb2f2db = L.marker(
+            var marker_69b033bcaa53189d1fd0d757feb32a4e = L.marker(
                 [33.15899, -96.947902],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_e0015ce007f13bf54619d4069f63a35f = L.popup({
-  "maxWidth": 320,
+        var popup_73689a3571cc2b696ab1aa5560f96097 = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_811a5fc2df7fc7685f66a26e0c057cb5 = $(`<div id="html_811a5fc2df7fc7685f66a26e0c057cb5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Little Elm Beach</h4>         <p style="margin: 5px 0; font-size: 12px;">704 W Eldorado Pkwy, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Lake/Park</p>              <img src="https://littleelmedc.com/wp-content/uploads/2013/08/beach-bash.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A popular, man-made white sand beach known as the largest in North Texas"</p>         </div></div>`)[0];
-                popup_e0015ce007f13bf54619d4069f63a35f.setContent(html_811a5fc2df7fc7685f66a26e0c057cb5);
+                var html_bddb30b5f2ea8d77662767da8f9b8b5b = $(`<div id="html_bddb30b5f2ea8d77662767da8f9b8b5b" style="width: 100.0%; height: 100.0%;"><b>Little Elm Beach</b><br>704 W Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_73689a3571cc2b696ab1aa5560f96097.setContent(html_bddb30b5f2ea8d77662767da8f9b8b5b);
             
         
 
-        marker_4619934c57d2cee12032f3707cb2f2db.bindPopup(popup_e0015ce007f13bf54619d4069f63a35f)
+        marker_69b033bcaa53189d1fd0d757feb32a4e.bindPopup(popup_73689a3571cc2b696ab1aa5560f96097)
         ;
 
         
     
     
-            var marker_3e3ed71956cef3176be3677e1eaa4ff5 = L.marker(
+            var marker_89383c6b463eebf979cd6576ad9b8259 = L.marker(
                 [33.165906, -96.891631],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_18dca0a3e17b35287a93f62b0602b992 = L.popup({
-  "maxWidth": 320,
+        var popup_f783b0c3611a9b6a2477d401e614a65d = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_847ebe71563ed09d7f5b919c5be11c27 = $(`<div id="html_847ebe71563ed09d7f5b919c5be11c27" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">McCord Park</h4>         <p style="margin: 5px 0; font-size: 12px;">1900 FM 423, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Park</p>              <img src="https://littleelmedc.com/wp-content/uploads/2024/07/McCord-Park-GO2-scaled.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">"38-acre, wooded community park in Little Elm"</p>         </div></div>`)[0];
-                popup_18dca0a3e17b35287a93f62b0602b992.setContent(html_847ebe71563ed09d7f5b919c5be11c27);
+                var html_e9ac5bd69e5b81cb278f4de0330d3378 = $(`<div id="html_e9ac5bd69e5b81cb278f4de0330d3378" style="width: 100.0%; height: 100.0%;"><b>McCord Park</b><br>1900 FM 423, Little Elm, TX 75068</div>`)[0];
+                popup_f783b0c3611a9b6a2477d401e614a65d.setContent(html_e9ac5bd69e5b81cb278f4de0330d3378);
             
         
 
-        marker_3e3ed71956cef3176be3677e1eaa4ff5.bindPopup(popup_18dca0a3e17b35287a93f62b0602b992)
+        marker_89383c6b463eebf979cd6576ad9b8259.bindPopup(popup_f783b0c3611a9b6a2477d401e614a65d)
         ;
 
         
     
     
-            var marker_7fbc738344fe76d72bdb810a378ad846 = L.marker(
+            var marker_7731a4c3eebfa5a864564824dc384dfe = L.marker(
                 [33.155959, -96.944092],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_3e017f454b6506b5ad2449c4f4fe2029 = L.popup({
-  "maxWidth": 320,
+        var popup_7a42db66ae612a64dba8e3c5112e79bc = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_ad0ae2ef7b3e6f1f98300ab7b1792625 = $(`<div id="html_ad0ae2ef7b3e6f1f98300ab7b1792625" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Leo's Brunch House </h4>         <p style="margin: 5px 0; font-size: 12px;">500 W Eldorado Pkwy #400, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Restaurant</p>              <img src="https://static.spotapps.co/website_images/ab_websites/90320_website/location2.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A brunch house located in the heart of Little Elm with savory goodness of breakfast, brunch, and lunch."</p>         </div></div>`)[0];
-                popup_3e017f454b6506b5ad2449c4f4fe2029.setContent(html_ad0ae2ef7b3e6f1f98300ab7b1792625);
+                var html_c9fbd684bf62706896a8b2dc54e2633f = $(`<div id="html_c9fbd684bf62706896a8b2dc54e2633f" style="width: 100.0%; height: 100.0%;"><b>Leo's Brunch House </b><br>500 W Eldorado Pkwy #400, Little Elm, TX 75068</div>`)[0];
+                popup_7a42db66ae612a64dba8e3c5112e79bc.setContent(html_c9fbd684bf62706896a8b2dc54e2633f);
             
         
 
-        marker_7fbc738344fe76d72bdb810a378ad846.bindPopup(popup_3e017f454b6506b5ad2449c4f4fe2029)
+        marker_7731a4c3eebfa5a864564824dc384dfe.bindPopup(popup_7a42db66ae612a64dba8e3c5112e79bc)
         ;
 
         
     
     
-            var marker_43547001b00f9f41d5384b65e308c933 = L.marker(
+            var marker_b7191f23a48d52b40e3416642aad89a4 = L.marker(
                 [33.162467, -96.933859],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_b262f7e95a9a9481bf87edce65a4e7ac = L.popup({
-  "maxWidth": 320,
+        var popup_2510306ea3646aa818f71ca8685e8385 = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_35d6f7ed3e40ef80aaa3b21c62fded60 = $(`<div id="html_35d6f7ed3e40ef80aaa3b21c62fded60" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Towers Tap House</h4>         <p style="margin: 5px 0; font-size: 12px;">290 E Eldorado Pkwy, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Restaurant</p>              <img src="https://towerstaphouse.com/assets/images/Service/Services/Towers-Tap-Houae-Little-Elm-TX.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">"A restaurant and sports bar in Little Elm with challenging hgames and fun activities." </p>         </div></div>`)[0];
-                popup_b262f7e95a9a9481bf87edce65a4e7ac.setContent(html_35d6f7ed3e40ef80aaa3b21c62fded60);
+                var html_49978764aed9735cce414c00d97e9cba = $(`<div id="html_49978764aed9735cce414c00d97e9cba" style="width: 100.0%; height: 100.0%;"><b>Towers Tap House</b><br>290 E Eldorado Pkwy, Little Elm, TX 75068</div>`)[0];
+                popup_2510306ea3646aa818f71ca8685e8385.setContent(html_49978764aed9735cce414c00d97e9cba);
             
         
 
-        marker_43547001b00f9f41d5384b65e308c933.bindPopup(popup_b262f7e95a9a9481bf87edce65a4e7ac)
+        marker_b7191f23a48d52b40e3416642aad89a4.bindPopup(popup_2510306ea3646aa818f71ca8685e8385)
         ;
 
         
     
     
-            var marker_200bb79e8723cb0ceef30d6cc2157ec6 = L.marker(
+            var marker_af2e1ce3498bb47dcf70029bd7d39508 = L.marker(
                 [33.156791, -96.892076],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_b932e1ab5c0e7861138643fea502f19e = L.popup({
-  "maxWidth": 320,
+        var popup_b647585fba8e3e927e7f3aaeff1755ef = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_edb1438f3d3eb2b842e4e1a2b2c8798e = $(`<div id="html_edb1438f3d3eb2b842e4e1a2b2c8798e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Flix Brewhouse Frisco/Little Elm</h4>         <p style="margin: 5px 0; font-size: 12px;">1660 FM 423, Frisco, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Movie theater</p>              <img src="https://all.web.img.acsta.net/r_2500_x/img/e0/64/e0647213e1996efcb558a0390e400584.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A premier cinema brewery located near the border of Little Elm and Frisco"</p>         </div></div>`)[0];
-                popup_b932e1ab5c0e7861138643fea502f19e.setContent(html_edb1438f3d3eb2b842e4e1a2b2c8798e);
+                var html_b2b8aee151f02179408a6437282a797d = $(`<div id="html_b2b8aee151f02179408a6437282a797d" style="width: 100.0%; height: 100.0%;"><b>Flix Brewhouse Frisco/Little Elm</b><br>1660 FM 423, Frisco, TX 75068</div>`)[0];
+                popup_b647585fba8e3e927e7f3aaeff1755ef.setContent(html_b2b8aee151f02179408a6437282a797d);
             
         
 
-        marker_200bb79e8723cb0ceef30d6cc2157ec6.bindPopup(popup_b932e1ab5c0e7861138643fea502f19e)
+        marker_af2e1ce3498bb47dcf70029bd7d39508.bindPopup(popup_b647585fba8e3e927e7f3aaeff1755ef)
         ;
 
         
     
     
-            var marker_e5d2d5ef09b5e0278a73431f113d8f74 = L.marker(
+            var marker_cade95d73b692bd9208fae9b4ac95668 = L.marker(
                 [33.165275, -96.939092],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_ec6e74b7aa868d87487166fb37766e0e = L.popup({
-  "maxWidth": 320,
+        var popup_48aef8719f89b272bbce718fdbf47687 = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_3712df60410e91a7c9ed114412494fa3 = $(`<div id="html_3712df60410e91a7c9ed114412494fa3" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">The Cove at The Lakefront</h4>         <p style="margin: 5px 0; font-size: 12px;">417 Lakefront Dr, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Recreational Center</p>              <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/denton/_DSC1536_E982E605-E4BA-B41B-3D4C660604FFA82C-e9828e74a27e8b0_e982f14e-d520-347b-0c4f3566c1809e7c.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">"a 43,00 sqr foot, year round indoor waterpark located in the community rec center"</p>         </div></div>`)[0];
-                popup_ec6e74b7aa868d87487166fb37766e0e.setContent(html_3712df60410e91a7c9ed114412494fa3);
+                var html_3de3e42d72f1f52ffa1097ce06296f15 = $(`<div id="html_3de3e42d72f1f52ffa1097ce06296f15" style="width: 100.0%; height: 100.0%;"><b>The Cove at The Lakefront</b><br>417 Lakefront Dr, Little Elm, TX 75068</div>`)[0];
+                popup_48aef8719f89b272bbce718fdbf47687.setContent(html_3de3e42d72f1f52ffa1097ce06296f15);
             
         
 
-        marker_e5d2d5ef09b5e0278a73431f113d8f74.bindPopup(popup_ec6e74b7aa868d87487166fb37766e0e)
+        marker_cade95d73b692bd9208fae9b4ac95668.bindPopup(popup_48aef8719f89b272bbce718fdbf47687)
         ;
 
         
     
     
-            var marker_06fbe98452b2fd75da26fff57e0b372d = L.marker(
+            var marker_ed127cba8dc1113a047adb06692c6d9c = L.marker(
                 [33.162401, -96.934024],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_7969c8d932801f9530b195446bf17444 = L.popup({
-  "maxWidth": 320,
+        var popup_6c37c56354d3c36ccf286632f691a03a = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_5a342365b85531e121a39f572acdbbf9 = $(`<div id="html_5a342365b85531e121a39f572acdbbf9" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Hydrous Wake Park</h4>         <p style="margin: 5px 0; font-size: 12px;">280 E Eldorado Pkwy Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Park</p>              <img src="https://lakefrontlittleelm.com/wp-content/uploads/2021/12/Hydros.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A multi-location cable wakeboard training facility"</p>         </div></div>`)[0];
-                popup_7969c8d932801f9530b195446bf17444.setContent(html_5a342365b85531e121a39f572acdbbf9);
+                var html_9e4271e4fc93ea45c90dc32cd567a25b = $(`<div id="html_9e4271e4fc93ea45c90dc32cd567a25b" style="width: 100.0%; height: 100.0%;"><b>Hydrous Wake Park</b><br>280 E Eldorado Pkwy Little Elm, TX 75068</div>`)[0];
+                popup_6c37c56354d3c36ccf286632f691a03a.setContent(html_9e4271e4fc93ea45c90dc32cd567a25b);
             
         
 
-        marker_06fbe98452b2fd75da26fff57e0b372d.bindPopup(popup_7969c8d932801f9530b195446bf17444)
+        marker_ed127cba8dc1113a047adb06692c6d9c.bindPopup(popup_6c37c56354d3c36ccf286632f691a03a)
         ;
 
         
     
     
-            var marker_780a7dd94d0c4943029222d897e99899 = L.marker(
+            var marker_d9f923c27bde79c595aa81880cc74944 = L.marker(
                 [33.162777, -96.935072],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_26cea0112382ad7464a5571fea0fc018 = L.popup({
-  "maxWidth": 320,
+        var popup_4178ada8511b7d2784f752e3d7ab64df = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_df0442856fe14e3203784bbed9da671b = $(`<div id="html_df0442856fe14e3203784bbed9da671b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Tinman Social</h4>         <p style="margin: 5px 0; font-size: 12px;">199 Main St, Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Entertainment</p>              <img src="https://s3-media0.fl.yelpcdn.com/bphoto/ChKFnoSzD0yfuXnsdnqZGg/o.jpg"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A two-story entertainment complex located in The Lakefront District"</p>         </div></div>`)[0];
-                popup_26cea0112382ad7464a5571fea0fc018.setContent(html_df0442856fe14e3203784bbed9da671b);
+                var html_df37c12a7a4de1a08a340322d097e251 = $(`<div id="html_df37c12a7a4de1a08a340322d097e251" style="width: 100.0%; height: 100.0%;"><b>Tinman Social</b><br>199 Main St, Little Elm, TX 75068</div>`)[0];
+                popup_4178ada8511b7d2784f752e3d7ab64df.setContent(html_df37c12a7a4de1a08a340322d097e251);
             
         
 
-        marker_780a7dd94d0c4943029222d897e99899.bindPopup(popup_26cea0112382ad7464a5571fea0fc018)
+        marker_d9f923c27bde79c595aa81880cc74944.bindPopup(popup_4178ada8511b7d2784f752e3d7ab64df)
         ;
 
         
     
     
-            var marker_2e4e364aaedee39ee7e3d6483866d518 = L.marker(
+            var marker_11819bd583e6f8a9a8fe0570bdacc4e8 = L.marker(
                 [33.15786, -96.939884],
                 {
 }
-            ).addTo(marker_cluster_12dff1ecd90a989b0500e69ce1a13bce);
+            ).addTo(marker_cluster_4163974be4f967b16a3ce5a9428d3865);
         
     
-        var popup_d26797ee2f48168d840e44f9c3eb6b80 = L.popup({
-  "maxWidth": 320,
+        var popup_23b39cac733050512224f44c81e96b6b = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_01ea996d47235caf040c4d3230ce12e1 = $(`<div id="html_01ea996d47235caf040c4d3230ce12e1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial, sans-serif;">         <h4 style="margin: 5px 0;">Little Elm Public Library</h4>         <p style="margin: 5px 0; font-size: 12px;">100 W Eldorado pkwym Little Elm, TX 75068</p>         <p style="margin: 5px 0; font-size: 11px; color: #666;">Library</p>              <img src="https://www.arcgis.com/sharing/rest/content/items/95bf950855a74b1f9e709161aef53437/resources/townhall.jpg?v=1770336000071&amp;w=800"              loading="lazy"              referrerpolicy="no-referrer"              crossorigin="anonymous"              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">         <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">             Image unavailable (the source site may block embedding).         </p>                  <p style="margin: 8px 0; font-size: 11px;">" A vibrant community hub serving Little Elm and the durrounding Denton county"</p>         </div></div>`)[0];
-                popup_d26797ee2f48168d840e44f9c3eb6b80.setContent(html_01ea996d47235caf040c4d3230ce12e1);
+                var html_1543b29dec48b6a937bd185445904f04 = $(`<div id="html_1543b29dec48b6a937bd185445904f04" style="width: 100.0%; height: 100.0%;"><b>Little Elm Public Library</b><br>100 W Eldorado pkwym Little Elm, TX 75068</div>`)[0];
+                popup_23b39cac733050512224f44c81e96b6b.setContent(html_1543b29dec48b6a937bd185445904f04);
             
         
 
-        marker_2e4e364aaedee39ee7e3d6483866d518.bindPopup(popup_d26797ee2f48168d840e44f9c3eb6b80)
+        marker_11819bd583e6f8a9a8fe0570bdacc4e8.bindPopup(popup_23b39cac733050512224f44c81e96b6b)
         ;
 
         
     
     
-            marker_cluster_12dff1ecd90a989b0500e69ce1a13bce.addTo(map_194814ae680820a9d8e169ca575762d2);
+            marker_cluster_4163974be4f967b16a3ce5a9428d3865.addTo(map_96d82fb9fa829d5ef6b8a33cdb9a11c9);
         
 </script>
+
 </html>
