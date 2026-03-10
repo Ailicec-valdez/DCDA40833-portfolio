@@ -1,4 +1,5 @@
 import os
+import html
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
@@ -47,8 +48,10 @@ for _, row in df.iterrows():
     # Get image URL
     img_src = ""
     if not pd.isna(row.get("Image_URL")):
-        img_src = row["Image_URL"]
-        if isinstance(img_src, str) and img_src.startswith("http://"):
+        img_src = str(row["Image_URL"]).strip().strip('"')
+        if img_src.startswith("//"):
+            img_src = f"https:{img_src}"
+        if img_src.startswith("http://"):
             img_src = "https://" + img_src[len("http://"):]
     
     # Create popup HTML with image
@@ -61,9 +64,17 @@ for _, row in df.iterrows():
     
     # Add image if available
     if img_src:
+        safe_img_src = html.escape(img_src, quote=True)
         popup_html += f"""
-        <img src="{img_src}" 
+        <img src="{safe_img_src}"
+             loading="lazy"
+             referrerpolicy="no-referrer"
+             crossorigin="anonymous"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
              style="width: 220px; height: 140px; object-fit: cover; border-radius: 5px; margin-top: 8px;">
+        <p style="display:none; margin-top:8px; font-size:11px; color:#a33;">
+            Image unavailable (the source site may block embedding).
+        </p>
         """
     
     if not pd.isna(row.get("Description")):
@@ -86,3 +97,4 @@ for _, row in df.iterrows():
 output_file = os.path.join(BASE_DIR, "interactive_map.html")
 m.save(output_file)
 print(f"Map saved at {output_file}")
+print("Tip: open the map via a local server (not file://) if images do not appear.")
